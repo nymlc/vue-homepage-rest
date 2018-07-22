@@ -1,0 +1,73 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin slideup($name, $eDura: 1s, $lDura: 1s, $eY: 0%, $eTY: -100%, $lY: 0%, $lTY: -100%) {
+    .#{$name}-enter-active {
+        transition: all $eDura;
+    }
+
+    .#{$name}-enter {
+        opacity: 0;
+        transform: translateY($eY);
+    }
+    
+    .#{$name}-enter-to {
+        opacity: 1;
+        transform: translateY($eTY);
+    }
+    
+    .#{$name}-leave-active {
+        transition: all $lDura;
+    }
+    
+    .#{$name}-leave {
+        opacity: 1;
+        transform: translateY($lY);
+    }
+    
+    .#{$name}-leave-to {
+        opacity: 0;
+        transform: translateY($lTY);
+    }
+}
+
+@mixin slideleft($name, $eDura, $lDura, $eX, $eTX, $lX, $lTX) {
+    .#{$name}-enter-active {
+        transition: all $eDura;
+    }
+    
+    .#{$name}-enter {
+        opacity: 0;
+        transform: translateX($eX);
+    }
+    
+    .#{$name}-enter-to {
+        opacity: 1;
+        transform: translateX($eTX);
+    }
+    
+    .#{$name}-leave-active {
+        transition: all $lDura;
+    }
+    
+    .#{$name}-leave {
+        opacity: 1;
+        transform: translateX($lX);
+    }
+    
+    .#{$name}-leave-to {
+        opacity: 0;
+        transform: translateX($lTX);
+    }
+}

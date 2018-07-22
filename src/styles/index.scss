@@ -1,0 +1,41 @@
+/*声明 WebFont*/
+@font-face {
+    font-family: 'logofont';
+    src: url('../assets/fonts/logofont.eot');
+    src:
+      url('../assets/fonts/logofont.eot?#font-spider') format('embedded-opentype'),
+      url('../assets/fonts/logofont.woff') format('woff'),
+      url('../assets/fonts/logofont.ttf') format('truetype'),
+      url('../assets/fonts/logofont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*声明 WebFont*/
+@font-face {
+    font-family: 'Exo';
+    src: url('../assets/fonts/exo-extralight-webfont.woff.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 16px !important;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Exo','-apple-system','Open Sans',HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue','Hiragino Sans GB','Microsoft YaHei',Helvetica,Arial,sans-serif;
+}
+body {
+    height: 100%;
+    font-size: 16px !important;
+    font-family: 'Exo','-apple-system','Open Sans',HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue','Hiragino Sans GB','Microsoft YaHei',Helvetica,Arial,sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+    padding: 0;
+    margin: 0;
+    // font-size: 16px;
+}
